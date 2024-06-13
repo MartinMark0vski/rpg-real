@@ -9,8 +9,6 @@ public class Main {
 
         do {
             System.out.println("A new fight begins!");
-
-
             warrior.attack(mage);
             mage.castSpell(warrior);
             rogue.attack(mage);
@@ -19,7 +17,7 @@ public class Main {
             mage.levelUp();
             rogue.levelUp();
 
-            System.out.print("do you want another fight? (yes/no): ");
+            System.out.print("do you want to fight again? (yes/no): ");
         } while (scanner.nextLine().equalsIgnoreCase("yes"));
         scanner.close();
         System.out.println("Game over. Thank you for playing!");
